@@ -1,0 +1,40 @@
+O Norueguês vive na primeira casa.
+O Inglês vive na casa Vermelha.
+O Sueco tem Cachorros como animais de estimação.
+O Dinamarquês bebe Chá.
+A casa Verde fica do lado esquerdo da casa Branca.
+O homem que vive na casa Verde bebe Café.
+O homem que fuma Pall Mall cria Pássaros.
+O homem que vive na casa Amarela fuma Dunhill.
+O homem que vive na casa do meio bebe Leite.
+O homem que fuma Blends vive ao lado do que tem Gatos.
+O homem que cria Cavalos vive ao lado do que fuma Dunhill.
+O homem que fuma BlueMaster bebe Cerveja.
+O Alemão fuma Prince.
+O Norueguês vive ao lado da casa Azul.
+O homem que fuma Blends é vizinho do que bebe água.
+
+m["nacionalidade"][0] = "norueguês"
+posicao(m["cor"], "vermelha") == posicao(m["nacionalidade"], "inglês")
+posicao(m["animal"], "cachorros") == posicao(m["nacionalidade"], "sueco")
+posicao(m["bebibda"], "chá") == posicao(m["nacionalidade"], "dinamarquês")
+posicao(m["cor"], "verde") == posicao(m["cor"], "branca") - 1
+posicao(m["cor"], "verde") == posicao(m["bebida"], "café")
+posicao(m["cigarro"], "pall mall") == posicao(m["animal"], "pássaros")
+posicao(m["cor"], "amarela") == posicao(m["cigarro"], "dunhill")
+posicao(m["babida"], "leite") == 2
+posicao(m["cigarro"], "blends") == posicao(m["animal"], "gatos") +1 || posicao(m["cigarro"], "blends") == posicao(m["animal"], "gatos") -1
+posicao(m["animal"], "cavalos") == posicao(m["cigarro"], "dunhill") -1 || posicao(m["animal"], "cavalos") == posicao(m["cigarro"], "dunhill") +1
+posicao(m["cigarro"], "bluemaster") == posicao(m["bebida"], "cerveja")
+posicao(m["cigarro"], "prince") == posicao(m["nacionalidade"], "alemão")
+posicao(m["nacionalidade"], "norueguês") == posicao(m["cor"], "azul") -1 || posicao(m["nacionalidade"], "norueguês") == posicao(m["cor"], "azul") +1
+posicao(m["cigarro"], "blends") == posicao(m["bebida"], "água") -1 || posicao(m["cigarro"], "blends") == posicao(m["bebida"], "água") +1
+
+
+solucao = {}
+solucao["cor"] = ["amarela", "azul", "vermelha", "verde", "branca"]
+solucao["nacionalidade"] = ["norueguês", "dinamarquês", "inglês", "alemão", "sueco"]
+solucao["bebida"] = ["água", "chá", "leite", "café", "cerveja"]
+solucao["cigarro"] = ["dunhill", "blends", "pall mall", "prince", "bluemaster"]
+solucao["animal"] = ["gatos", "cavalos", "pássaros", "peixes", "cachorros"]
+
