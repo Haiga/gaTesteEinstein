@@ -38,3 +38,4 @@ solucao["bebida"] = ["água", "chá", "leite", "café", "cerveja"]
 solucao["cigarro"] = ["dunhill", "blends", "pall mall", "prince", "bluemaster"]
 solucao["animal"] = ["gatos", "cavalos", "pássaros", "peixes", "cachorros"]
 
+

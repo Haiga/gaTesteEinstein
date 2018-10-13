@@ -1,0 +1,31 @@
+Algoritmo genético implementado (evolucionário)
+    Parâmetros: tipo de mutação, tipo de crossover, tipo de seleção
+        Tipos de mutação:
+            Mutação Multiponto: Troca um número aleatório de características dentro de um indivíduo
+        Tipos de Crossover:
+            Crossover Uniforme: Troca um número aleatório de características dentro dos pais, gerando dois filhos
+            Crossover Pontual: Troca uma característica aleatória dentro dos pais, gerando dois filhos
+        Tipos de Seleção:
+            Seleção Roleta: Retorna os índices dos dois indivíduos com maior fitness na população
+            Seleção Torneio: Dado um número de indivíduos amostrados aleatoriamente da população, escolhe-se os dois que possuem maior fitness
+
+Heurística Ordenar as Permutações
+    Avalia individualmente a fitness de cada permutação em relação a cada característica (cor, nacionalidade, cigarro ...)
+    Em seguida ordena essas permutações e então aplica uma busca em profundidade com essas permutações
+
+Heurística Par de Caracteríticas
+    Tenta inserir pares de características definidas nas regras.
+    Exemplo: o Alemão fuma Prince
+        Se na matriz das características houver espaço para inserir alemão e prince na mesma coluna então pode ser que esteja certo,
+        se não a matriz que será proposta como solução com certeza é inválida.
+        Ao encaixar todos os pares colocamos os elementos faltantes e avaliamos a solução, se for inválida testamos outra ordem de inserir os pares
+
+Busca em Profundidade:
+    Testa as possibilidades dado um cojunto completo da matriz de característica
+
+Busca em Largura:
+    Testa as possibilidades levando adiante aqueles que são válidas
+
+
+
+
