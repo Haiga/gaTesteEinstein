@@ -6,7 +6,12 @@ O algoritmo genético tenta procurar uma solução válida para todas as regras
 
 Além de algoritmos genéticos, buscas em largura e profundidade, buscas com heurísticas também foram implementadas
 
-* [Regras do Teste de Einstein](https://rachacuca.com.br/teste-de-einstein/)
+* [Jogo Online Teste de Einstein](https://rachacuca.com.br/teste-de-einstein/)
+
+* [Regras do Teste de Einstein](https://github.com/Haiga/ga_teste_einstein/blob/master/rules.txt)
+
+* [Explicação das Heurísticas](https://github.com/Haiga/ga_teste_einstein/blob/master/info.txt)
+
 
 ## Related
 
